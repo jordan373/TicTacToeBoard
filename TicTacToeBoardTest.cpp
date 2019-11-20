@@ -23,5 +23,5 @@ TEST(TicTacToeBoardTest, unitTestName)
 
 TEST(TicTacToeBoardTest, testToggleTurn) {
     TicTacToeBoard ticTacToeBoardTest;
-    ASSERT_EQ(ticTacToeBoardTest.toggleTurn(), 0);
+    ASSERT_EQ(ticTacToeBoardTest.toggleTurn(), O);
 }
