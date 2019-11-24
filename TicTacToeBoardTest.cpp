@@ -77,7 +77,7 @@ TEST(TicTacToeBoardTest, testgetPiece) {
     ASSERT_EQ(ticTacToeBoardTest.getPiece(0, 0), O);
 }
 
-TEST(TicTacToeBoardTest, testgetWinnerO) {
+TEST(TicTacToeBoardTest, testgetWinnerBlank) {
     TicTacToeBoard ticTacToeBoardTest;
     ticTacToeBoardTest.placePiece(0, 0);
     ticTacToeBoardTest.placePiece(0, 1);
