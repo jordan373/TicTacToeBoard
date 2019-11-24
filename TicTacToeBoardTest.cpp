@@ -35,13 +35,24 @@ TEST(TicTacToeBoardTest, testPlacePiece) {
     ASSERT_EQ(ticTacToeBoardTest.placePiece(0, 4), Invalid);
 }
 
-TEST(TicTacToeBoardTest, testgetWinner) {
-    TicTacToeBoard ticTacToeBoardTest;
-    ticTacToeBoardTest.placePiece(0, 0);
-    ticTacToeBoardTest.placePiece(1, 0);
-    ticTacToeBoardTest.placePiece(0, 1);
-    ticTacToeBoardTest.placePiece(1, 2);
-    ASSERT_EQ(ticTacToeBoardTest.placePiece(0, 2), X);
-    ASSERT_EQ(ticTacToeBoardTest.getWinner(), X);
+TEST(TicTacToeBoardTest, testgetWinnerX) {
+TicTacToeBoard ticTacToeBoardTest;
+ticTacToeBoardTest.placePiece(0, 0);
+ticTacToeBoardTest.placePiece(1, 0);
+ticTacToeBoardTest.placePiece(0, 1);
+ticTacToeBoardTest.placePiece(1, 2);
+ASSERT_EQ(ticTacToeBoardTest.placePiece(0, 2), X);
+ASSERT_EQ(ticTacToeBoardTest.getWinner(), X);
+}
+
+TEST(TicTacToeBoardTest, testgetWinnerO) {
+TicTacToeBoard ticTacToeBoardTest;
+ticTacToeBoardTest.placePiece(1, 0);
+ticTacToeBoardTest.placePiece(0, 0);
+ticTacToeBoardTest.placePiece(1, 2);
+ticTacToeBoardTest.placePiece(1, 1);
+ticTacToeBoardTest.placePiece(0, 2);
+ASSERT_EQ(ticTacToeBoardTest.placePiece(2, 2), O);
+ASSERT_EQ(ticTacToeBoardTest.getWinner(), O);
 }
 
