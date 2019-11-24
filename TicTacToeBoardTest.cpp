@@ -21,12 +21,7 @@ TEST(TicTacToeBoardTest, unitTestName)
 }
 */
 
-TEST(TicTacToeBoardTest, testToggleTurnO) {
-    TicTacToeBoard ticTacToeBoardTest;
-    ASSERT_EQ(ticTacToeBoardTest.toggleTurn(), O);
-}
-
-TEST(TicTacToeBoardTest, testToggleTurnX) {
+TEST(TicTacToeBoardTest, testToggleTurn) {
     TicTacToeBoard ticTacToeBoardTest;
     ASSERT_EQ(ticTacToeBoardTest.toggleTurn(), O);
     ASSERT_EQ(ticTacToeBoardTest.toggleTurn(), X);
@@ -35,4 +30,7 @@ TEST(TicTacToeBoardTest, testToggleTurnX) {
 TEST(TicTacToeBoardTest, testPlacePiece) {
 TicTacToeBoard ticTacToeBoardTest;
 ASSERT_EQ(ticTacToeBoardTest.placePiece(0, 0), X);
+ASSERT_EQ(ticTacToeBoardTest.placePiece(1, 0), O);
+ASSERT_EQ(ticTacToeBoardTest.placePiece(1, 0), O);
+ASSERT_EQ(ticTacToeBoardTest.placePiece(0, 4), Invalid);
 }

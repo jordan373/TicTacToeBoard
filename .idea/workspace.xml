@@ -12,7 +12,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8b928fb7-6674-4c33-b606-7c3d619ed8db" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/TicTacToeBoard.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/TicTacToeBoard.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TicTacToeBoardTest.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/TicTacToeBoardTest.cpp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -62,7 +62,7 @@
       <updated>1574277435688</updated>
       <workItem from="1574277437132" duration="3727000" />
       <workItem from="1574462098332" duration="439000" />
-      <workItem from="1574570823708" duration="10196000" />
+      <workItem from="1574570823708" duration="10614000" />
     </task>
     <servers />
   </component>
