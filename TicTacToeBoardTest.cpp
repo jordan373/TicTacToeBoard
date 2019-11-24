@@ -28,9 +28,20 @@ TEST(TicTacToeBoardTest, testToggleTurn) {
 }
 
 TEST(TicTacToeBoardTest, testPlacePiece) {
-TicTacToeBoard ticTacToeBoardTest;
-ASSERT_EQ(ticTacToeBoardTest.placePiece(0, 0), X);
-ASSERT_EQ(ticTacToeBoardTest.placePiece(1, 0), O);
-ASSERT_EQ(ticTacToeBoardTest.placePiece(1, 0), O);
-ASSERT_EQ(ticTacToeBoardTest.placePiece(0, 4), Invalid);
+    TicTacToeBoard ticTacToeBoardTest;
+    ASSERT_EQ(ticTacToeBoardTest.placePiece(0, 0), X);
+    ASSERT_EQ(ticTacToeBoardTest.placePiece(1, 0), O);
+    ASSERT_EQ(ticTacToeBoardTest.placePiece(1, 0), O);
+    ASSERT_EQ(ticTacToeBoardTest.placePiece(0, 4), Invalid);
 }
+
+TEST(TicTacToeBoardTest, testgetWinner) {
+    TicTacToeBoard ticTacToeBoardTest;
+    ticTacToeBoardTest.placePiece(0, 0);
+    ticTacToeBoardTest.placePiece(1, 0);
+    ticTacToeBoardTest.placePiece(0, 1);
+    ticTacToeBoardTest.placePiece(1, 2);
+    ASSERT_EQ(ticTacToeBoardTest.placePiece(0, 2), X);
+    ASSERT_EQ(ticTacToeBoardTest.getWinner(), X);
+}
+
