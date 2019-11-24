@@ -35,7 +35,4 @@ TEST(TicTacToeBoardTest, testToggleTurnX) {
 TEST(TicTacToeBoardTest, testPlacePiece) {
 TicTacToeBoard ticTacToeBoardTest;
 ASSERT_EQ(ticTacToeBoardTest.placePiece(0, 0), X);
-ASSERT_EQ(ticTacToeBoardTest.getPiece(0, 0), X);
-ASSERT_EQ(ticTacToeBoardTest.placePiece(4, 0), Invalid);
-ASSERT_EQ(ticTacToeBoardTest.placePiece(0, -1), Invalid);
 }
