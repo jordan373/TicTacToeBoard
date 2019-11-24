@@ -37,23 +37,25 @@ Piece TicTacToeBoard::toggleTurn()
  * is over, no more pieces can be placed so attempting to place a piece
  * should neither change the board nor change whose turn it is.
 **/ 
-Piece TicTacToeBoard::placePiece(int row, int column)
-{
+Piece TicTacToeBoard::placePiece(int row, int column) {
     Piece gamePiece = getPiece(row, column);
     Piece is_win;
 
     if (gamePiece != Blank) {
-        return X;
-    }
-
-    else {
-        board[row][column] = turn;
+        return gamePiece;
+    } else {
         is_win = getWinner();
-        if(is_win == Blank || is_win == Invalid) {
-            return O;
+        if (is_win != Invalid) {
+            return board[row][column];
+        } else {
+            board[row][column] = turn;
+            is_win = getWinner();
+            if (is_win != Invalid && is_win != Blank) {
+                return is_win;
+            }
+            toggleTurn();
+            return board[row][column];
         }
-        toggleTurn();
-        return board[row][column];
     }
 }
 
