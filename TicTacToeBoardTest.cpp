@@ -101,6 +101,20 @@ ticTacToeBoardTest.placePiece(2, 0);
 ASSERT_EQ(ticTacToeBoardTest.getWinner(), X);
 }
 
+TEST(TicTacToeBoardTest, testDiagnalWin) {
+TicTacToeBoard ticTacToeBoardTest;
+ticTacToeBoardTest.placePiece(0, 2);
+ticTacToeBoardTest.placePiece(0, 1);
+ticTacToeBoardTest.placePiece(1, 1);
+ticTacToeBoardTest.placePiece(0, 0);
+ticTacToeBoardTest.placePiece(2, 0);
+ASSERT_EQ(ticTacToeBoardTest.getWinner(), X);
+}
+
+
+
+
+
 
 
 
