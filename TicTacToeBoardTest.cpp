@@ -91,7 +91,7 @@ TEST(TicTacToeBoardTest, testgetWinnerBlank) {
     ASSERT_EQ(ticTacToeBoardTest.getWinner(), Blank);
 }
 
-TEST(TicTacToeBoardTest, testDiagnalWin) {
+TEST(TicTacToeBoardTest, testVertWin) {
 TicTacToeBoard ticTacToeBoardTest;
 ticTacToeBoardTest.placePiece(0, 0);
 ticTacToeBoardTest.placePiece(0, 1);
@@ -101,7 +101,7 @@ ticTacToeBoardTest.placePiece(2, 0);
 ASSERT_EQ(ticTacToeBoardTest.getWinner(), X);
 }
 
-TEST(TicTacToeBoardTest, testDiagnalWin) {
+TEST(TicTacToeBoardTest, testDiagonalWin) {
 TicTacToeBoard ticTacToeBoardTest;
 ticTacToeBoardTest.placePiece(0, 2);
 ticTacToeBoardTest.placePiece(0, 1);
