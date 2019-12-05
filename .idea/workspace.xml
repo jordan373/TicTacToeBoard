@@ -11,10 +11,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8b928fb7-6674-4c33-b606-7c3d619ed8db" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TicTacToeBoardTest.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/TicTacToeBoardTest.cpp" afterDir="false" />
-    </list>
+    <list default="true" id="8b928fb7-6674-4c33-b606-7c3d619ed8db" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +61,7 @@
       <workItem from="1574277437132" duration="3727000" />
       <workItem from="1574462098332" duration="439000" />
       <workItem from="1574570823708" duration="13276000" />
-      <workItem from="1575488020420" duration="4626000" />
+      <workItem from="1575488020420" duration="4861000" />
     </task>
     <servers />
   </component>
