@@ -44,20 +44,16 @@ Piece TicTacToeBoard::placePiece(int row, int column) {
     if (gamePiece != Blank) {
         return gamePiece;
     } else {
+        board[row][column] = turn;
         is_win = getWinner();
-        if (is_win != Invalid) {
-            return board[row][column];
-        } else {
-            board[row][column] = turn;
-            is_win = getWinner();
-            if (is_win != Invalid && is_win != Blank) {
-                return is_win;
-            }
-            toggleTurn();
-            return board[row][column];
+        if (is_win != Invalid && is_win != Blank) {
+            return is_win;
         }
+        toggleTurn();
+        return board[row][column];
     }
 }
+
 
 /**
  * Returns what piece is at the provided coordinates, or Blank if there
