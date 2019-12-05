@@ -1,5 +1,7 @@
 # TicTacToeBoard
 
+[![Coverage Status](https://coveralls.io/repos/github/jordan373/TicTacToeBoard/badge.svg?branch=master)](https://coveralls.io/github/jordan373/TicTacToeBoard?branch=master)
+
 ## Associated Enumerated Types
 `Piece` has four possible values: `X`,`O`,`Invalid`, and `Blank`
 
