@@ -89,6 +89,7 @@ TEST(TicTacToeBoardTest, testgetWinnerBlank) {
     ticTacToeBoardTest.placePiece(2, 2);
     ticTacToeBoardTest.placePiece(2, 1);
     ASSERT_EQ(ticTacToeBoardTest.getWinner(), Blank);
+    ASSERT_EQ(ticTacToeBoardTest.placePiece(0, 0), X);
 }
 
 TEST(TicTacToeBoardTest, testVertWin) {
